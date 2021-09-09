@@ -32,7 +32,7 @@ export class InfoPaginaService {
   private cargarEquipo() {
 
     // Leer el archivo JSON
-    this.http.get('https://angular-html-gratisudemy-default-rtdb.europe-west1.firebasedatabase.app/equipo')
+    this.http.get('https://angular-html-gratisudemy-default-rtdb.europe-west1.firebasedatabase.app/equipo.json')
     .subscribe( (resp: any[]) => {
 
       this.equipo = resp;
